@@ -1,38 +1,42 @@
 $(document).ready(function() {
   let myThings = [
     {
-      title:"",
-      description:"",
-      url:"",
-      github:""
+      title:"_armin\\ portfolio",
+      description:"Website build from mockup given by @viktorijavalsoe.",
+      url:"./arminportfolio",
+      github:"https://github.com/Lunasdude/ArminSemovic_portfolio"
     },
     {
-      title:"",
-      description:"",
-      url:"",
-      github:""
+      title:"_millhouse",
+      description:"Blog project using PDO, run by upbeatPigeons.",
+      url:"./millhouse",
+      github:"https://github.com/upbeatPigeons/Millhouse"
     },
     {
-      title:"",
-      description:"",
-      url:"",
-      github:""
+      title:"_buy\\ bad\\ thing",
+      description:"Basic bootstrap PHP webshop, to learn CRUD",
+      url:"./crud",
+      github:"https://github.com/Lunasdude/crud_shop"
     },
     {
-      title:"",
-      description:"",
-      url:"",
-      github:""
+      title:"_parrots",
+      description:"Gallery site, to learn flexbox and image fitting",
+      url:"./parrots",
+      github:"https://github.com/Lunasdude/parrots"
     }
   ];
 
   $.each(myThings, function() {
     let box = $("<div>").addClass("thing");
+    let links = $("<div>").addClass("links");
+
     $("<h3>").text(this.title).appendTo(box);
     $("<p>").text(this.description).appendTo(box);
-    $("<a>").attr("href", this.url).text("/live").appendTo(box);
-    $("<a>").attr("href", this.github).text("/github").appendTo(box);
-    
+
+    $("<a>").attr("href", this.url).text("/live").appendTo(links);
+    $("<a>").attr("href", this.github).text("/github").appendTo(links);
+
+    links.appendTo(box);
     box.appendTo(".thingContainer");
   });
   $("<img>").attr("src", source).attr("alt", description).appendTo("#dialog");
