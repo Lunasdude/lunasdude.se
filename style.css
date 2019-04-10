@@ -1,4 +1,7 @@
 body{
+	
+	margin: 0;
+	padding: 0;
 	text-align: center;
 }
 
@@ -6,13 +9,45 @@ h1,
 h2, 
 h3{
   font-family: 'Major Mono Display', monospace;
+	margin: 0;
 }
-p{
+p,
+a{
 	font-family: 'IBM Plex Mono', monospace;
 }
 
-nav img{
-	padding-top: 10px;
+header h1{
+	font-size: 3rem;
+	padding: 200px 50px 100px;
+	text-align: left;
+}
+h2{
+	font-size: 2rem;
+}h3{
+	font-size: 1.6rem;
+}
+
+.thingContainer, 
+.links{
+	border-left: 4px solid #266e67;
+	border-right: 4px solid #6a2638;
+	display: flex;
+	justify-content: space-around;
+	margin: 0 auto;
+	width: 75%;
+}
+.thing{
+	flex: 1;
+	width: 30%
+}
+.link{
+	flex: 1;
+}
+
+.footer{
+	background-color: #000;
+	bottom: 0;
 	height: 50px;
-	width: 50px;
+	position: absolute;
+	width: 100%;
 }
