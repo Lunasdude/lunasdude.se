@@ -49,7 +49,10 @@ h3,
 .links,
 .contact{
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-around;
+}.link{
+	margin: 50px;
 }
 
 .contact{
