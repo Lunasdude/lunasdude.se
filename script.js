@@ -25,6 +25,24 @@ $(document).ready(function() {
       github:"https://github.com/Lunasdude/parrots"
     }
   ];
+  let myMedias = [
+    {
+      media:"_linkedin",
+      url:"https://www.linkedin.com/in/lukaslennstring/",
+    },
+    {
+      media:"_github",
+      url:"https://github.com/Lunasdude/",
+    },
+    {
+      media:"_e-mail",
+      url:"mailto:lukas.lennstring@gmail.com",
+    },
+    {
+      media:"_twitter",
+      url:"https://twitter.com/lunasduder",
+    },
+  ];
 
   $.each(myThings, function() {
     let box = $("<div>").addClass("thing");
@@ -39,6 +57,9 @@ $(document).ready(function() {
     links.appendTo(box);
     box.appendTo(".thingContainer");
   });
-  $("<img>").attr("src", source).attr("alt", description).appendTo("#dialog");
 
+  $.each(myMedias, function() {
+    let clicky = $("<a>").text(this.media).attr("href", this.url).addClass("link");
+    clicky.appendTo(".contact");
+  });
 });

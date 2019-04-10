@@ -12,7 +12,8 @@ h3{
 	margin: 0;
 }
 p,
-a{
+a,
+.link{
 	font-family: 'IBM Plex Mono', monospace;
 }
 
@@ -21,10 +22,14 @@ header h1{
 	padding: 200px 50px 100px;
 	text-align: left;
 }
-h2{
+h2
+{
 	font-size: 2rem;
-}h3{
+}
+h3, 
+.link{
 	font-size: 1.6rem;
+	text-decoration: none;
 }
 
 .thingContainer{
@@ -41,15 +46,20 @@ h2{
 	margin: 50px;
 	width: 300px;
 }
-.links{
+.links,
+.contact{
 	display: flex;
 	justify-content: space-around;
+}
+
+.contact{
+	margin: 100px 0;
 }
 
 .footer{
 	background-color: #000;
 	bottom: 0;
 	height: 50px;
-	position: absolute;
+	position: static;
 	width: 100%;
 }
