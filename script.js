@@ -4,7 +4,7 @@ $(document).ready(function() {
       title:"_armin\\ portfolio",
       description:"Website build from mockup given by @viktorijavalsoe.",
       url:"./arminportfolio",
-      github:"https://github.com/Lunasdude/ArminSemovic_portfolio"
+      github:"https://github.com/lsaLu/ArminSemovic_portfolio"
     },
     {
       title:"_millhouse",
@@ -16,13 +16,13 @@ $(document).ready(function() {
       title:"_buy\\ bad\\ thing",
       description:"Basic bootstrap PHP webshop, to learn CRUD",
       url:"./crud",
-      github:"https://github.com/Lunasdude/crud_shop"
+      github:"https://github.com/lsaLu/crud_shop"
     },
     {
       title:"_parrots",
       description:"Gallery site, to learn flexbox and image fitting",
       url:"./parrots",
-      github:"https://github.com/Lunasdude/parrots"
+      github:"https://github.com/lsaLu/parrots"
     }
   ];
   let myMedias = [
@@ -32,7 +32,7 @@ $(document).ready(function() {
     },
     {
       media:"_github",
-      url:"https://github.com/Lunasdude/",
+      url:"https://github.com/lsaLu",
     },
     {
       media:"_e-mail",
@@ -40,7 +40,7 @@ $(document).ready(function() {
     },
     {
       media:"_twitter",
-      url:"https://twitter.com/lunasduder",
+      url:"https://twitter.com/_lsaLu",
     },
   ];
 
